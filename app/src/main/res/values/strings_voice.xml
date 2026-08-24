@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_bar_voice_button_description">Record voice message</string>
+    <string name="message_bar_voice_stop_button_description">Stop and send voice message</string>
+    <string name="message_bar_voice_permission_requested">Allow microphone access, then tap the microphone again</string>
+    <string name="message_bar_voice_recording_started">Recording voice message… Tap stop to send</string>
+    <string name="message_bar_voice_too_short">Voice message is too short</string>
+    <string name="message_bar_voice_sent">Voice message sent</string>
+    <string name="message_bar_voice_failed">Could not send voice message: %1$s</string>
+    <string name="message_bar_voice_no_activity">Voice recording is unavailable on this screen</string>
+    <string name="message_bar_voice_missing_topic">Cannot determine the current ntfy topic</string>
+    <string name="message_bar_voice_default_message">Voice message</string>
+</resources>
