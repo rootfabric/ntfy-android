@@ -1,9 +1,9 @@
-name: Build voice-message APK
+name: Build agent-chat APK
 
 on:
   push:
     branches:
-      - feature/voice-messages
+      - main
   pull_request:
     branches:
       - main
@@ -33,6 +33,13 @@ jobs:
       - name: Install Android 36 platform
         run: sdkmanager "platforms;android-36"
 
+      - name: Install stable test-only debug signing key
+        run: |
+          mkdir -p "$HOME/.android"
+          base64 --decode .github/agent-debug.keystore.b64 > "$HOME/.android/debug.keystore"
+          chmod 600 "$HOME/.android/debug.keystore"
+          keytool -list -keystore "$HOME/.android/debug.keystore" -storepass android -alias androiddebugkey
+
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
@@ -42,7 +49,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: ntfy-voice-fdroid-debug-apk
+          name: ntfy-agent-chat-fdroid-debug-apk
           path: app/build/outputs/apk/fdroid/debug/*.apk
           if-no-files-found: error
           retention-days: 14
