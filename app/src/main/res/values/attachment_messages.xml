@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_bar_attachment_button_description">Attach file or take photo</string>
+    <string name="message_bar_attachment_choose_file">Choose file</string>
+    <string name="message_bar_attachment_take_photo">Take photo</string>
+    <string name="message_bar_attachment_sending">Sending attachment…</string>
+    <string name="message_bar_attachment_sent">Attachment sent</string>
+    <string name="message_bar_attachment_failed">Could not send attachment: %1$s</string>
+    <string name="message_bar_attachment_unavailable">Attachments are unavailable on this screen</string>
+    <string name="message_bar_attachment_missing_topic">Cannot determine the current ntfy topic</string>
+    <string name="message_bar_attachment_camera_failed">Could not capture photo</string>
+    <string name="message_bar_attachment_unauthorized">Not authorized to publish attachments</string>
+    <string name="message_bar_attachment_file_message">File: %1$s</string>
+    <string name="message_bar_attachment_photo_message">Photo</string>
+</resources>
