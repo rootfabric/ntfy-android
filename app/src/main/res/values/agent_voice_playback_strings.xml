@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voice_playback_play_description">Play voice message</string>
+    <string name="voice_playback_stop_description">Stop voice message</string>
+    <string name="voice_playback_downloading">Downloading voice message…</string>
+    <string name="voice_playback_expired">Voice message is no longer available</string>
+    <string name="voice_playback_failed">Could not play voice message</string>
+</resources>
