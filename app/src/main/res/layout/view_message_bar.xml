@@ -80,7 +80,7 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <io.heckel.ntfy.ui.MessageBarSendButton
         android:id="@+id/message_bar_publish_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
